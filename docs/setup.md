@@ -4,14 +4,13 @@ Pour pouvoir suivre cet atelier dans des conditions optimales, nous vous proposo
 
 ## GitHub Codespaces
 
-**Si vous n'avez pas l'habitude de gérer des environnements virtuels Python sur votre machine**, nous vous conseillons d'utiliser le service [GitHub Codespaces](https://docs.github.com/en/codespaces). Ce service permet de démarrer une machine virtuelle prête à l'emploi à partir d'un dépôt Git :
+**Si vous n'avez pas l'habitude de gérer des environnements virtuels Python sur votre machine**, nous vous conseillons d'utiliser le service [GitHub Codespaces](https://docs.github.com/fr/codespaces). Ce service permet de démarrer une machine virtuelle prête à l'emploi à partir d'un dépôt GitHub.
 
-1. Se créer un compte [GitHub](https://github.com)
-2. Se rendre sur le dépôt Git de l'atelier : [meetup-python-grenoble/datasette-workshop](https://github.com/meetup-python-grenoble/datasette-workshop)
-3. Cliquer sur le bouton "<> Code" puis "Codespaces"
-4. Cliquer sur "Créer un codespace sur main" ("Create codespace on main")
+Pour démarrer un Codespace avec le [dépôt GitHub de l'atelier](https://github.com/meetup-python-grenoble/datasette-workshop), cliquez sur ce bouton :
 
-Une fois l'environnement Codespace initialisé, ouvrir le terminal :
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/meetup-python-grenoble/datasette-workshop?quickstart=1)
+
+Une fois l'environnement Codespace initialisé, ouvrir un terminal :
 
 1. Installer Datasette avec `pipx` :
 ```bash
