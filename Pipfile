@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+datasette = "*"
+datasette-cluster-map = "*"
+datasette-codespaces = "*"
+datasette-dashboards = "*"
+
+[dev-packages]
+mkdocs = "*"
+mkdocs-material = "*"
+
+[requires]
+python_version = "3.11"

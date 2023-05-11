@@ -1,0 +1,6 @@
+title: Datasette Workshop
+about: meetup-python-grenoble/datasette-workshop
+about_url: https://github.com/meetup-python-grenoble/datasette-workshop
+description_html: |-
+  Exploration de données avec <a href="https://datasette.io">Datasette</a>
+plugins:

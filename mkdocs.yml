@@ -1,0 +1,77 @@
+site_name: Datasette Workshop
+site_description: Exploration de données avec Datasette
+site_author: Romain Clement
+site_url: https://meetup-python-grenoble.github.io/datasette-workshop
+
+copyright: Copyright &copy; 2023 Romain Clement
+
+repo_name: meetup-python-grenoble/datasette-workshop
+repo_url: https://github.com/meetup-python-grenoble/datasette-workshop
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: dist
+
+extra:
+  version: 1.0.0
+  social:
+    - name: GitHub Repository
+      icon: fontawesome/brands/github
+      link: https://github.com/meetup-python-grenoble/datasette-workshop
+    - name: Meetup Event
+      icon: fontawesome/brands/meetup
+      link: https://www.meetup.com/fr-FR/groupe-dutilisateurs-python-grenoble/events/293425930/
+    - name: Website Event
+      icon: fontawesome/solid/link
+      link: https://meetup-python-grenoble.github.io/events/2023-05-25/
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - navigation.footer
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+nav:
+  - index.md
+  - setup.md
+  - overview.md
+  - exploration.md
+  - visualisation.md
+  - playtime.md
+
+plugins:
+  - search:
+      lang:
+        - en
+        - fr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
