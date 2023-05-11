@@ -39,6 +39,7 @@ theme:
         icon: material/lightbulb-outline
         name: Switch to light mode
   features:
+    - content.code.copy
     - navigation.footer
     - navigation.top
     - navigation.tracking
