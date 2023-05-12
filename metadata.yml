@@ -3,4 +3,16 @@ about: meetup-python-grenoble/datasette-workshop
 about_url: https://github.com/meetup-python-grenoble/datasette-workshop
 description_html: |-
   Exploration de données avec <a href="https://datasette.io">Datasette</a>
-plugins:
+databases:
+  data:
+    tables:
+      dvf:
+        source: Demandes de valeurs foncières géolocalisées
+        source_url: https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/
+        license: Licence Ouverte / Open Licence version 2.0
+        license_url: https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+      communes:
+        source: France Geojson
+        source_url: https://github.com/gregoiredavid/france-geojson/
+        license: Licence Ouverte / Open Licence version 2.0
+        license_url: https://www.etalab.gouv.fr/licence-ouverte-open-licence/

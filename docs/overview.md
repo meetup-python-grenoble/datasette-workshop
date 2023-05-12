@@ -1,4 +1,4 @@
-# Tour d'horizon de Datasette
+# Tour d'horizon
 
 Avant de commencer à analyser des données, prenons quelques minutes pour comprendre comment fonctionne Datasette. Pour obtenir tous les détails d'utilisation de Datasette, veuillez vous référer à la [documentation officielle](https://docs.datasette.io).
 
@@ -37,8 +37,81 @@ Nous utiliserons principalement cette vue pour [l'exploration de données](explo
 
 ## Métadonnées
 
-### Générales
+Datasette est configurable via un fichier de métadonnées au format JSON ou YAML. Pour lancer Datasette avec le fichier de métadonné de l'atelier `metadata.yml` :
 
-### Plugins
+```bash
+datasette --metadata metadata.yml data.db
+```
+
+La page d'accueil de Datasette est maintenant personnalisée :
+
+![Datasette Home](static/datasette_home_metadata.png)
+
+Voici le contenu du fichier `metadata.yml` permettant de personnaliser la page d'accueil :
+
+```yaml
+title: Datasette Workshop
+about: meetup-python-grenoble/datasette-workshop
+about_url: https://github.com/meetup-python-grenoble/datasette-workshop
+description_html: |-
+  Exploration de données avec <a href="https://datasette.io">Datasette</a>
+```
+
+Il est également possible d'annoter la base de données avec les sources et licences des données sous-jacentes :
+
+![Datasette Table](static/datasette_table_metadata.png)
+
+En ajoutant les métadonnées suivantes uniquement pour les tables `dvf` et `communes` de la base de données `data` :
+
+```yaml
+databases:
+  data:
+    tables:
+      dvf:
+        source: Demandes de valeurs foncières géolocalisées
+        source_url: https://www.data.gouv.fr/fr/datasets/demandes-de-valeurs-foncieres-geolocalisees/
+        license: Licence Ouverte / Open Licence version 2.0
+        license_url: https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+      communes:
+        source: France Geojson
+        source_url: https://github.com/gregoiredavid/france-geojson/
+        license: Licence Ouverte / Open Licence version 2.0
+        license_url: https://www.etalab.gouv.fr/licence-ouverte-open-licence/
+```
+
+Beaucoup d'autres paramètres sont configurables via le fichier de métadonnées (descriptions et unités des colonnes, ordre de tri par défaut, etc.), veuillez vous référer à la [documentation officielle](https://docs.datasette.io/en/stable/metadata.html) pour plus de détails.
 
 ## Plugins
+
+L'application Datasette embarque un large panel de fonctionnalités générique mais en fonction des besoins, Datasette a besoin d'être augmenté avec des fonctionnalités additionnelles. Le [système de _plugins_](https://docs.datasette.io/en/stable/plugins.html) de Datasette permet à tous les développeurs de s'intégrer dans l'application pour proposer des fonctionnalités additionnelles, par exemple :
+
+- La visualisation de données
+- Accéder à de nouvelles fonctions SQL
+- Définir des formats d'export personnalisés
+- Personnaliser l'affichage de certains types de données dans l'interface
+- Ajouter des vues personnalisées
+- Ajouter des moyens d'authentification et d'autorisation
+- etc.
+
+Pour installer un plugin :
+
+```bash
+datasette install <plugin-name>
+```
+
+Pour lister les plugins installés :
+
+```bash
+datasette plugins
+```
+
+!!! note
+    Datasette embarque une liste de plugins pré-installés : la plupart des fonctionnalités de base de Datasette sont en réalité des plugins ! Pour lister tous les plugins y compris ceux distribués par défault : `datasette plugins --all`
+
+Pour désinstaller un plugin :
+
+```bash
+datasette uninstall <plugin-name>
+```
+
+La [liste de plugins référencés](https://datasette.io/plugins) s'agrandit régulièrement, vous trouverez très certainement votre bonheur ! Sinon, vous pouvez [développer votre propre plugin](https://docs.datasette.io/en/stable/writing_plugins.html).
