@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS [dvf] (
 
 CREATE TABLE IF NOT EXISTS [communes] (
     [code] TEXT,
-    [name] TEXT,
+    [nom] TEXT,
     [feature_type] TEXT,
     [feature_geometry] TEXT
 );
