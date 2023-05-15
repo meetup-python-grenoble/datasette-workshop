@@ -7,23 +7,23 @@ Avant de commencer à analyser des données, prenons quelques minutes pour compr
 Datasette permet de visualiser une ou plusieurs bases de données [SQLite](https://www.sqlite.org).
 C'est le seul type de base de données compatible avec Datasette pour le moment.
 
-Par exemple, pour démarrer Datasette avec la base de données de l'atelier `data.db` :
+Par exemple, pour démarrer Datasette avec la base de données de l'atelier `immobilier.db` :
 
 ```bash
-datasette data.db
+datasette immobilier.db
 ```
 
 En accédant à l'interface web via l'URL affichée dans le terminal, on obtient :
 
 ![Datasette Home](static/datasette_home.png)
 
-La page d'accueil de Datasette liste les bases de données associée (ici `data` uniquement) avec quelques informations complémentaires :
+La page d'accueil de Datasette liste les bases de données associée (ici `immobilier` uniquement) avec quelques informations complémentaires :
 
-- `data` : le nom de la base de données SQLite (extrait depuis le nom du fichier)
-- `27,872 rows in 2 tables` : indication du nombre total de lignes et de tables contenues dans la base
+- `immobilier` : le nom de la base de données SQLite (extrait depuis le nom du fichier)
+- `2 tables` : indication du nombre total de tables contenues dans la base
 - `dvf, communes` : la liste des tables contenues dans la base
 
-En cliquant sur `data`, nous obtenons une vue détaillée de la base de données :
+En cliquant sur `immobilier`, nous obtenons une vue détaillée de la base de données :
 
 ![Datasette Database](static/datasette_db.png)
 
@@ -40,7 +40,7 @@ Nous utiliserons principalement cette vue pour [l'exploration de données](explo
 Datasette est configurable via un fichier de métadonnées au format JSON ou YAML. Pour lancer Datasette avec le fichier de métadonné de l'atelier `metadata.yml` :
 
 ```bash
-datasette --metadata metadata.yml data.db
+datasette --metadata metadata.yml immobilier.db
 ```
 
 La page d'accueil de Datasette est maintenant personnalisée :
@@ -61,11 +61,11 @@ Il est également possible d'annoter la base de données avec les sources et lic
 
 ![Datasette Table](static/datasette_table_metadata.png)
 
-En ajoutant les métadonnées suivantes uniquement pour les tables `dvf` et `communes` de la base de données `data` :
+En ajoutant les métadonnées suivantes uniquement pour les tables `dvf` et `communes` de la base de données `immobilier` :
 
 ```yaml
 databases:
-  data:
+  immobilier:
     tables:
       dvf:
         source: Demandes de valeurs foncières géolocalisées
@@ -83,7 +83,7 @@ Beaucoup d'autres paramètres sont configurables via le fichier de métadonnées
 
 ## Plugins
 
-L'application Datasette embarque un large panel de fonctionnalités générique mais en fonction des besoins, Datasette a besoin d'être augmenté avec des fonctionnalités additionnelles. Le [système de _plugins_](https://docs.datasette.io/en/stable/plugins.html) de Datasette permet à tous les développeurs de s'intégrer dans l'application pour proposer des fonctionnalités additionnelles, par exemple :
+L'application Datasette embarque un large panel de fonctionnalités génériques mais en fonction des besoins, Datasette a besoin d'être augmenté avec des fonctionnalités additionnelles. Le [système de _plugins_](https://docs.datasette.io/en/stable/plugins.html) de Datasette permet à tous les développeurs de s'intégrer dans l'application pour proposer des fonctionnalités additionnelles, par exemple :
 
 - La visualisation de données
 - Accéder à de nouvelles fonctions SQL

@@ -24,7 +24,7 @@ datasette install datasette-codespaces
 
 3. Démarrer Datasette :
 ```bash
-datasette --metadata metadata.yml data.db
+datasette --metadata metadata.yml immobilier.db
 ```
 
 4. Ouvrir l'interface Datasette en cliquant sur l'URL générée (de la forme `https://<username>-<slug>-8001.preview.app.github.dev/`)
@@ -57,7 +57,7 @@ pip install datasette
 
 3. Démarrer Datasette :
 ```bash
-datasette --metadata metadata.yml data.db
+datasette --metadata metadata.yml immobilier.db
 ```
 
 4. Ouvrir l'interface Datasette avec l'URL locale : [http://127.0.0.1:8001](http://127.0.0.1:8001)

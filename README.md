@@ -16,11 +16,11 @@ Les jeux de données suivants sont utilisés dans cet atelier :
 - [France Geojson](https://github.com/gregoiredavid/france-geojson/)
     - Licence : `Licence Ouverte / Open Licence version 2.0`
 
-Pour construire automatiquement la base de données SQLite `data.db` à partir du jeu de données :
+Pour construire automatiquement la base de données SQLite `immobilier.db` à partir du jeu de données :
 
 ```bash
 ./build.sh
-sqlite3 data.db "select count(*) from dvf"
+sqlite3 immobilier.db "select count(*) from dvf"
 ```
 
 Le schéma SQL de la base de données SQLite est disponible dans le script [`schema.sql`](schema.sql).
