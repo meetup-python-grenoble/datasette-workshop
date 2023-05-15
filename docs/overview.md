@@ -10,7 +10,7 @@ C'est le seul type de base de données compatible avec Datasette pour le moment.
 Par exemple, pour démarrer Datasette avec la base de données de l'atelier `immobilier.db` :
 
 ```bash
-datasette immobilier.db
+datasette data/immobilier.db
 ```
 
 En accédant à l'interface web via l'URL affichée dans le terminal, on obtient :
@@ -37,10 +37,12 @@ Nous utiliserons principalement cette vue pour [l'exploration de données](explo
 
 ## Métadonnées
 
-Datasette est configurable via un fichier de métadonnées au format JSON ou YAML. Pour lancer Datasette avec le fichier de métadonné de l'atelier `metadata.yml` :
+Datasette est configurable via un fichier de métadonnées au format JSON ou YAML (ce dernier étant humainement plus simple à manipuler et permettant d'inclure des chaînes de caractères multilignes très pratiques pour le HTML et le SQL).
+
+Pour lancer Datasette avec le fichier de métadonné de l'atelier `metadata.yml` :
 
 ```bash
-datasette --metadata metadata.yml immobilier.db
+datasette --metadata data/metadata.yml data/immobilier.db
 ```
 
 La page d'accueil de Datasette est maintenant personnalisée :
@@ -115,3 +117,13 @@ datasette uninstall <plugin-name>
 ```
 
 La [liste de plugins référencés](https://datasette.io/plugins) s'agrandit régulièrement, vous trouverez très certainement votre bonheur ! Sinon, vous pouvez [développer votre propre plugin](https://docs.datasette.io/en/stable/writing_plugins.html).
+
+## Configuration
+
+Enfin, Datasette possède quelques [options de configuration](https://docs.datasette.io/en/stable/settings.html), permettant notamment de spécifier le délai de temps maximum pour l'exécution de requêtes SQL. Nous avons déjà un fichier de configuration `settings.json` dans le dossier `data` de l'atelier.
+
+Pour démarrer Datasette avec le dossier complet `data` contenant la base de données, les métadonnées et la configuration, nous utiliserons le mode [_configuration directory_](https://docs.datasette.io/en/stable/settings.html#configuration-directory-mode) :
+
+```bash
+datasette data/
+```

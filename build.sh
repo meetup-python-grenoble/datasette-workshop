@@ -3,7 +3,7 @@
 set -e
 
 DATA="${PWD}/.datasets"
-DATABASE=immobilier.db
+DATABASE=data/immobilier.db
 
 CURRENT_YEAR=$(date +"%Y")
 START_YEAR=$((${CURRENT_YEAR}-5))
