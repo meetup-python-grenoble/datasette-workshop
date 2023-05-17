@@ -37,7 +37,7 @@ Idéalement, votre tableau de bord doit être filtrable sur les critères suivan
 
 🔍 **Datasette** a été créé en partie pour effectuer du **journaliste d’investigation**. A vous de vous mettre dans la peau d’un ou d’une journaliste d’investigation.
 
-### 🕵️ Voici votre mission 🕵️‍♀️
+🕵️ Voici votre mission
 
 Une **transaction immobilière** très importante a été effectuée en **2019**. Il s’agit de **la plus importante transaction** en Isère des 5 dernières années. Mais qui se cache derrière cette transaction ? **A vous de le découvrir**. Comme vous n’avez pas des mois de recherche devant vous, nous allons vous guider un peu.
 
