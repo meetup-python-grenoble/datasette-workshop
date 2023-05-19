@@ -15,7 +15,7 @@ Avec la méthode de votre choix (interface web et/ou requêtes SQL), tentez de r
 
 ## Niveau 2 : Tableau de bord
 
-À l'aide du plugin `datasette-dashboards`, créer un tableau de bord des transactions immobilières permettant de visualiser :
+À l'aide du plugin [`datasette-dashboards`](https://datasette.io/plugins/datasette-dashboards), créer un tableau de bord des transactions immobilières permettant de visualiser :
 
 - Le nombre total de transactions immobilières
 - Le nombre total de ventes de maisons
@@ -31,7 +31,7 @@ Idéalement, votre tableau de bord doit être filtrable sur les critères suivan
 
 ## Niveau 3 : Prédictions
 
-À l'aide du plugin `datasette-ml`, créer un modèle d'apprentissage machine permettant de prédire le prix de vente d'un appartement à Grenoble !
+À l'aide du plugin [`datasette-ml`](https://github.com/rclement/datasette-ml), créer un modèle d'apprentissage machine permettant de prédire le prix de vente d'un appartement à Grenoble !
 
 ## Niveau 4 : investigation
 
@@ -47,8 +47,8 @@ Tout d’abord, trouver le **montant de la transaction** la plus importante. **R
 
 1. ☢️ La transaction est en lien avec l’entreprise EDF. En effet, les terrains se situent non loin de l’ancienne centrale nucléaire de Creys-Malville (Superphénix). Pour pouvoir finaliser le démantèlement complet de la centrale, EDF a besoin de nouveaux terrains.
 
-2. 🏀 La transaction est en lien avec Tony Parker. En effet, les terrains se situent à Villard-de-Lans où Tony Parker cherche à créer un grand complexe hôtelier pour développer l’activité touristique. 
+2. 🏀 La transaction est en lien avec Tony Parker. En effet, les terrains se situent à Villard-de-Lans où Tony Parker cherche à créer un grand complexe hôtelier pour développer l’activité touristique.
 
 3. ⚡ La transaction est en lien avec l’entreprise Cap Energy. En effet, les terrains se situent non loin de l’entreprise Jambon Aoste et vont en partie être utilisés pour implanter une usine de méthanisation des déchets de l’usine de jambons.
 
-4. 🎢 La transaction est en lien avec l’entreprise Compagnie des Alpes. En effet, le parc Walibi Rhône-Alpes a besoin de nouveaux terrains pour créer le nouveau circuit de montagnes russes Mystic. 
+4. 🎢 La transaction est en lien avec l’entreprise Compagnie des Alpes. En effet, le parc Walibi Rhône-Alpes a besoin de nouveaux terrains pour créer le nouveau circuit de montagnes russes Mystic.
