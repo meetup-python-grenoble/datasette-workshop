@@ -44,6 +44,5 @@ CREATE TABLE IF NOT EXISTS [dvf] (
 CREATE TABLE IF NOT EXISTS [communes] (
     [code] TEXT,
     [nom] TEXT,
-    [feature_type] TEXT,
-    [feature_geometry] TEXT
+    [geojson] TEXT
 );

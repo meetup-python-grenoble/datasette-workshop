@@ -49,12 +49,11 @@ CREATE TEMP TABLE IF NOT EXISTS communes_geojson(geojson TEXT);
 .mode json
 .import ${COMMUNES_JSON} communes_geojson
 
-INSERT INTO communes(code, nom, feature_type, feature_geometry)
+INSERT INTO communes(code, nom, geojson)
 SELECT
     value ->> '$.properties.code',
     value ->> '$.properties.nom',
-    value ->> '$.type',
-    value ->> '$.geometry'
+    value
 FROM
     (
         SELECT geojson -> '$.features' AS array
