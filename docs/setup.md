@@ -4,7 +4,11 @@ Pour pouvoir suivre cet atelier dans des conditions optimales, nous vous proposo
 
 ## GitHub Codespaces
 
-**Si vous n'avez pas l'habitude de gérer des environnements virtuels Python sur votre machine**, nous vous conseillons d'utiliser le service [GitHub Codespaces](https://docs.github.com/fr/codespaces). Ce service permet de démarrer une machine virtuelle prête à l'emploi à partir d'un dépôt GitHub.
+**Si vous n'avez pas l'habitude de gérer des environnements virtuels Python sur votre machine**, nous vous conseillons d'utiliser le service [GitHub Codespaces](https://docs.github.com/fr/codespaces). Ce service permet de démarrer un environnement dans un conteneur Docker prêt à l'emploi à partir d'un dépôt GitHub.
+
+!!! tip "Astuce"
+    Chaque utilisateur de GitHub bénéficie **gratuitement** de [120 "coeur-heures" et 15 Go de stockage par mois](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+    Ce quota est plus que nécessaire pour réaliser cet atelier dans son intégralité !
 
 Pour démarrer un Codespace avec le [dépôt GitHub de l'atelier](https://github.com/meetup-python-grenoble/datasette-workshop), cliquez sur ce bouton :
 
