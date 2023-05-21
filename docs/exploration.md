@@ -1,4 +1,4 @@
-# Exploration de données
+# 🔭 Exploration de données
 
 Datasette a été initialement conçu comme une application d'exploration et d'analyse de données pour le [journalisme](https://datasette.io/for/data-journalism). Les deux manière majeure d'effectuer ces tâches se font au travers de l'interface web et de l'interpréteur SQL.
 

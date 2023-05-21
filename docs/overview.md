@@ -1,4 +1,4 @@
-# Tour d'horizon
+# ✈️ Tour d'horizon
 
 Avant de commencer à analyser des données, prenons quelques minutes pour comprendre comment fonctionne Datasette. Pour obtenir tous les détails d'utilisation de Datasette, veuillez vous référer à la [documentation officielle](https://docs.datasette.io).
 

@@ -1,4 +1,4 @@
-# Visualisation de données
+# 📈 Visualisation de données
 
 Afin de faciliter l'analyse de données, il est possible d'intégrer de la visualisation de données directement dans Datasette, grâce à son écosystème de [plugins](https://docs.datasette.io/en/stable/plugins.html). La plupart des plugins mentionnés sont configurables pour un usage avancé, référez-vous à leurs documentations respectives pour plus de détails.
 

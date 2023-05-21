@@ -1,4 +1,4 @@
-# Installation
+# 🛠 Installation
 
 Pour pouvoir suivre cet atelier dans des conditions optimales, nous vous proposons plusieurs options de mise en place.
 

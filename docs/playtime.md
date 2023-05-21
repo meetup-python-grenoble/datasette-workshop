@@ -1,8 +1,8 @@
-# À vous de jouer !
+# 🎲 À vous de jouer !
 
 Maintenant que vous savez utiliser Datasette et son écosystème, nous vous proposons de mettre en pratique vos nouvelles connaissances ! Les différentes parties sont indépendantes mais sont classées par niveau de compétences requises.
 
-## Niveau 1 : Questions
+## ⁉️ Niveau 1 : Questions
 
 Avec la méthode de votre choix (interface web et/ou requêtes SQL), tentez de répondre aux questions suivantes :
 
@@ -13,7 +13,7 @@ Avec la méthode de votre choix (interface web et/ou requêtes SQL), tentez de r
 - [ ] Quelles sont les 5 villes où le plus de transactions immobilières ont été entrées en 2022 ?
 - [ ] Quelles sont les villes où aucune transaction immobilière n'a été enregistrée en 2022 ?
 
-## Niveau 2 : Tableau de bord
+## 🎨 Niveau 2 : Tableau de bord
 
 À l'aide du plugin [`datasette-dashboards`](https://datasette.io/plugins/datasette-dashboards), créer un tableau de bord des transactions immobilières permettant de visualiser :
 
@@ -29,15 +29,15 @@ Idéalement, votre tableau de bord doit être filtrable sur les critères suivan
 - Date de début
 - Date de fin
 
-## Niveau 3 : Prédictions
+## 🔮 Niveau 3 : Prédictions
 
 À l'aide du plugin [`datasette-ml`](https://github.com/rclement/datasette-ml), créer un modèle d'apprentissage machine permettant de prédire le prix de vente d'un appartement à Grenoble !
 
-## Niveau 4 : investigation
+**Conseil** : pour être sûr d'utiliser uniquement les données désirées (lignes, colonnes), créer une vue SQL à partir des données DVF et utiliser cette vue comme argument de la fonction d'entrainement !
 
-🔍 **Datasette** a été créé en partie pour effectuer du **journaliste d’investigation**. A vous de vous mettre dans la peau d’un ou d’une journaliste d’investigation.
+## 🕵️ Niveau 4 : investigation
 
-🕵️ Voici votre mission
+**Datasette** a été créé en partie pour effectuer du **journaliste d’investigation**. A vous de vous mettre dans la peau d’un ou d’une journaliste d’investigation. Voici votre mission :
 
 Une **transaction immobilière** très importante a été effectuée en **2019**. Il s’agit de **la plus importante transaction** en Isère des 5 dernières années. Mais qui se cache derrière cette transaction ? **A vous de le découvrir**. Comme vous n’avez pas des mois de recherche devant vous, nous allons vous guider un peu.
 

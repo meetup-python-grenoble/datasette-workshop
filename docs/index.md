@@ -1,10 +1,10 @@
 ---
-title: Accueil
+title: 🏠 Accueil
 ---
 
 ![Cover](static/cover.png)
 
-# Datasette Worshop
+# Datasette Workshop
 
 > Exploration de données avec Datasette
 
