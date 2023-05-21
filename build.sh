@@ -46,17 +46,16 @@ load_communes_geojson() {
     curl -L -o "${COMMUNES_JSON}" "${COMMUNES_URL}"
     sqlite3 ${DATABASE} <<EOF
 CREATE TEMP TABLE IF NOT EXISTS communes_geojson(geojson TEXT);
-.mode json
 .import ${COMMUNES_JSON} communes_geojson
 
 INSERT INTO communes(code, nom, geojson)
 SELECT
-    value ->> '$.properties.code',
-    value ->> '$.properties.nom',
+    json_extract(value, '$.properties.code'),
+    json_extract(value, '$.properties.nom'),
     value
 FROM
     (
-        SELECT geojson -> '$.features' AS array
+        SELECT json_extract(geojson, '$.features') AS array
         FROM communes_geojson
     ) features,
     json_each(features.array)

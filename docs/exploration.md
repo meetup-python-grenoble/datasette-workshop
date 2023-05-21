@@ -68,7 +68,7 @@ Toutes les fonctionnalités SQL supportées par SQLite sont ainsi disponibles da
 - [Fonctions de _fenêtrage_](https://www.sqlite.org/windowfunctions.html#biwinfunc) : `row_number`, `rank`, etc.
 - [Fonctions de date et temps](https://www.sqlite.org/lang_datefunc.html) : `date`, `time`, `strftime`, etc.
 - [Fonctions mathématiques](https://www.sqlite.org/lang_mathfunc.html) : `ceil`, `floor`, `sin`, `cos`, etc.
-- [Fonctions et opérateurs JSON](https://www.sqlite.org/json1.html) : `json_array`, `json_object`, `->`, `->>`, etc.
+- [Fonctions et opérateurs JSON](https://www.sqlite.org/json1.html) : `json_extract`, `json_array`, `json_object`, `->`, `->>`, etc.
 - [Jointures](https://www.sqlite.org/syntax/join-clause.html) : `INNER JOIN`, `LEFT JOIN`, `CROSS JOIN`, etc.
 - [CTE](https://www.sqlite.org/lang_with.html) : `WITH ... AS`, etc.
 
