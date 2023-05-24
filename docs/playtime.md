@@ -7,10 +7,14 @@ Maintenant que vous savez utiliser Datasette et son écosystème, nous vous prop
 Avec la méthode de votre choix (interface web et/ou requêtes SQL), tentez de répondre aux questions suivantes :
 
 - [ ] Combien d'appartement ont été vendues à Grenoble en 2022 ?
+- [ ] Combien de DVF par année ont été enregistrées depuis 2018 ?
+- [ ] Quel est la tendance de vente de maisons depuis 2018 ?
 - [ ] Quelles sont les villes avec le plus de maisons vendues en Isère en 2022 ?
-- [ ] Quel est le prix moyen au mètre carré en Isère en 2022 ?
-- [ ] Quel est le prix moyen au mètre carré à Montbonnot Saint-Martin en 2022 ?
-- [ ] Quelles sont les 5 villes où le plus de transactions immobilières ont été entrées en 2022 ?
+- [ ] Quel est le prix de vente moyen au mètre carré des appartements en Isère en 2022 ?
+- [ ] Quelles sont les 10 rues de Grenoble où le prix de vente moyen au mètre carré des appartements est le plus faible en 2021 ?
+- [ ] Quel est sont les 20 villes avec le plus haut prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
+- [ ] Quel est sont les 20 villes avec le plus bas prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
+- [ ] Quel est la tendance d'évolution du prix de vente moyen au mètre carré des studios à Grenoble, Gières, Saint-Martin-d'Hères, Echirolles, Meylan et la Tronche depuis 2018 ?
 - [ ] Quelles sont les villes où aucune transaction immobilière n'a été enregistrée en 2022 ?
 
 ## 🎨 Niveau 2 : Tableau de bord
