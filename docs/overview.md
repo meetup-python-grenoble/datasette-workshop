@@ -17,7 +17,7 @@ En accédant à l'interface web via l'URL affichée dans le terminal, on obtient
 
 ![Datasette Home](static/datasette_home.png)
 
-La page d'accueil de Datasette liste les bases de données associée (ici `immobilier` uniquement) avec quelques informations complémentaires :
+La page d'accueil de Datasette liste les bases de données associées (ici `immobilier` uniquement) avec quelques informations complémentaires :
 
 - `immobilier` : le nom de la base de données SQLite (extrait depuis le nom du fichier)
 - `2 tables` : indication du nombre total de tables contenues dans la base
@@ -39,7 +39,7 @@ Nous utiliserons principalement cette vue pour [l'exploration de données](explo
 
 Datasette est configurable via un fichier de métadonnées au format JSON ou YAML (ce dernier étant humainement plus simple à manipuler et permettant d'inclure des chaînes de caractères multilignes très pratiques pour le HTML et le SQL).
 
-Pour lancer Datasette avec le fichier de métadonné de l'atelier `metadata.yml` :
+Pour lancer Datasette avec le fichier de métadonnées de l'atelier `metadata.yml` :
 
 ```bash
 datasette --metadata data/metadata.yml data/immobilier.db

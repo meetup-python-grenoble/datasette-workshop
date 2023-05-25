@@ -1,6 +1,6 @@
 # 🔭 Exploration de données
 
-Datasette a été initialement conçu comme une application d'exploration et d'analyse de données pour le [journalisme](https://datasette.io/for/data-journalism). Les deux manière majeure d'effectuer ces tâches se font au travers de l'interface web et de l'interpréteur SQL.
+Datasette a été initialement conçu comme une application d'exploration et d'analyse de données pour le [journalisme](https://datasette.io/for/data-journalism). Les deux manières majeures d'effectuer ces tâches se font au travers de l'interface web et de l'interpréteur SQL.
 
 ## Interface Web
 
@@ -8,11 +8,11 @@ Sans taper une ligne de code SQL, nous pouvons commencer nos explorations direct
 
 ### Tri
 
-Pour trier les données d'une table selon une colonne, nous pouvons accéder au menu contextuel de colonne (en forme d'engrenage ⚙️) et de sélectionner "Sort ascending" (tri croissant) ou "Sort descending" (tri décroissant) :
+Pour trier les données d'une table selon une colonne, nous pouvons accéder au menu contextuel de colonne (en forme d'engrenage ⚙️) et sélectionner "Sort ascending" (tri croissant) ou "Sort descending" (tri décroissant) :
 
 ![Cog Menu](static/datasette_cog_menu.png)
 
-Il est également possible de cliquer directement sur le nom d'une colonne : un fois pour un tri croissant, deux fois pour un tri décroissant.
+Il est également possible de cliquer directement sur le nom d'une colonne : une fois pour un tri croissant, deux fois pour un tri décroissant.
 
 ### Filtrage
 
@@ -23,11 +23,11 @@ Pour trier les données d'une table, il est possible d'utiliser le formulaire de
 3. Taper la valeur
 4. Cliquer sur "Apply"
 
-Par exemple, pour filtrer les DVF uniquement sur les ventes d'appartement à Grenoble :
+Par exemple, pour filtrer les DVF uniquement sur les ventes d'appartements à Grenoble :
 
 ![Filtres](static/datasette_filters.png)
 
-Vous pouvez combiner autant de filtres désirés, et l'utilisation judicieuse de tous opérateurs de comparaison disponibles permet généralement d'accéder au sous-ensemble de données recherchées.
+Vous pouvez combiner autant de filtres désirés, et l'utilisation judicieuse de tous les opérateurs de comparaison disponibles permet généralement d'accéder au sous-ensemble de données recherchées.
 
 ### Facettes
 

@@ -44,7 +44,7 @@ Vous pouvez ensuite supprimer définitivement votre Codespace si vous le souhait
 
 ## Environnement virtuel local
 
-**Si vous êtes familier avec la gestion d'environnements virtuels Python sur votre machine** (en utilisant `venv` + `pip`, `pipenv`, `poetry`, ou `pipx`), vous pouvez installer Datasette comme n'importe quel autre bibliothèque Python :
+**Si vous êtes familier avec la gestion d'environnements virtuels Python sur votre machine** (en utilisant `venv` + `pip`, `pipenv`, `poetry`, ou `pipx`), vous pouvez installer Datasette comme n'importe quelle autre bibliothèque Python :
 
 1. Cloner le dépôt Git de l'atelier :
 ```bash
@@ -53,9 +53,18 @@ cd datasette-workshop
 ```
 
 2. Installer Datasette (par exemple, en utilisant `venv` et `pip`) :
+
+Sous Linux ou macOS :
 ```bash
 python3 -m venv venv
 source venv/bin/activate
+pip install datasette
+```
+
+Sous Windows :
+```bash
+python -m venv venv
+.\venv\Scripts\activate
 pip install datasette
 ```
 
