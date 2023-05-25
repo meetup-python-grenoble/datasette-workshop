@@ -1,9 +1,9 @@
 site_name: Datasette Workshop
 site_description: Exploration de données avec Datasette
-site_author: Romain Clement
+site_author: Romain Clement, Pierre-Loïc Bayart
 site_url: https://meetup-python-grenoble.github.io/datasette-workshop
 
-copyright: Copyright &copy; 2023 Romain Clement
+copyright: Copyright &copy; 2023 Romain Clement, Pierre-Loïc Bayart
 
 repo_name: meetup-python-grenoble/datasette-workshop
 repo_url: https://github.com/meetup-python-grenoble/datasette-workshop
