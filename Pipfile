@@ -5,9 +5,6 @@ name = "pypi"
 
 [packages]
 datasette = "*"
-datasette-cluster-map = "*"
-datasette-codespaces = "*"
-datasette-dashboards = "*"
 
 [dev-packages]
 mkdocs = "*"
