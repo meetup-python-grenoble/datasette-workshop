@@ -12,8 +12,8 @@ Avec la méthode de votre choix (interface web et/ou requêtes SQL), tentez de r
 - [ ] Quelles sont les villes avec le plus de maisons vendues en Isère en 2022 ?
 - [ ] Quel est le prix de vente moyen au mètre carré des appartements en Isère en 2022 ?
 - [ ] Quelles sont les 10 rues de Grenoble où le prix de vente moyen au mètre carré des appartements est le plus faible en 2021 ?
-- [ ] Quelles est sont les 20 villes avec le plus haut prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
-- [ ] Quelles est sont les 20 villes avec le plus bas prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
+- [ ] Quelles sont les 20 villes avec le plus haut prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
+- [ ] Quelles sont les 20 villes avec le plus bas prix de vente moyen au mètre carré des appartements en 2022, ayant comptabilisé au moins 10 ventes ?
 - [ ] Quelle est la tendance d'évolution du prix de vente moyen au mètre carré des studios à Grenoble, Gières, Saint-Martin-d'Hères, Echirolles, Meylan et la Tronche depuis 2018 ?
 - [ ] Quelles sont les villes où aucune transaction immobilière n'a été enregistrée en 2022 ?
 
@@ -56,3 +56,7 @@ Tout d’abord, trouver le **montant de la transaction** la plus importante. **R
 3. ⚡ La transaction est en lien avec l’entreprise Cap Energy. En effet, les terrains se situent non loin de l’entreprise Jambon Aoste et vont en partie être utilisés pour implanter une usine de méthanisation des déchets de l’usine de jambons.
 
 4. 🎢 La transaction est en lien avec l’entreprise Compagnie des Alpes. En effet, le parc Walibi Rhône-Alpes a besoin de nouveaux terrains pour créer le nouveau circuit de montagnes russes Mystic.
+
+??? tip "Solutions"
+    Nous vous conseillons d'essayer ces exercices par vous-même, en consultant les documentations de l'écosystème Datasette et SQLite au besoin.
+    Si vous souhaitez néanmoins avoir des axes de réponses, nous vous en fournissons dans la page [🏆 Solutions](./playtime_solutions.md) 😉
